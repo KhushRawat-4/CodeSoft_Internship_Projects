@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: #f9f5e9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+header {
+    background: #8b0000;
+    color: #f9d9b3;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 3px solid #d4af37;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #f9d9b3;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://www.holidify.com/images/bgImages/UDAIPUR.jpg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #f9d9b3;
+    padding-top: 80px;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    background: #d4af37;
+    color: #8b0000;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    border: 2px solid #d4af37;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #d4af37;
+    transform: translateY(-5px);
+}
+
+section {
+    padding: 120px 0 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #8b0000;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #d4af37;
+    margin: 15px auto;
+}
+
+.heritage {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.heritage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.heritage-item {
+    border: 1px solid #e0d5c0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.heritage-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.heritage-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.heritage-item h3 {
+    padding: 20px 20px 10px;
+    color: #8b0000;
+}
+
+.heritage-item p {
+    padding: 0 20px 20px;
+    font-style: italic;
+}
+
+.palaces {
+    background: rgba(249, 245, 233, 0.85);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.palace-grid {
+    margin-top: 50px;
+}
+
+.palace-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.palace-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.palace-info {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e0d5c0;
+}
+
+.palace-info h3 {
+    color: #8b0000;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.palace-info p {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.palace-info ul {
+    list-style: none;
+}
+
+.palace-info li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.palace-info i {
+    color: #d4af37;
+}
+
+.experiences {
+    background: rgba(139, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    color: #f9d9b3;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.experiences h2, .experiences p {
+    color: #f9d9b3;
+}
+
+.experiences h2::after {
+    background: #d4af37;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.experience {
+    background: rgba(255,255,255,0.1);
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid rgba(212,175,55,0.3);
+}
+
+.experience:hover {
+    background: rgba(212,175,55,0.1);
+    transform: translateY(-10px);
+}
+
+.experience i {
+    font-size: 3rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.contact {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input, form select {
+    padding: 15px;
+    border: 1px solid #e0d5c0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+footer {
+    background: #8b0000;
+    color: #f9d9b3;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.royal-crest {
+    margin-top: 20px;
+}
+
+.royal-crest img {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(29%) saturate(459%) hue-rotate(327deg) brightness(105%) contrast(92%);
+}
+
+@media (max-width: 768px) {
+    .palace-card {
+        grid-template-columns: 1fr;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+}
