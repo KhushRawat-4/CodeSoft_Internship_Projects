@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: url('./images/shorekeeper.webp') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.calculator {
+  position: relative;
+  z-index: 1;
+  background: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.display {
+  background: #222;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.previous {
+  font-size: 1rem;
+  height: 20px;
+  color: #aaa;
+  overflow: hidden;
+}
+
+.current {
+  font-size: 2rem;
+  height: 30px;
+  overflow: hidden;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #555;
+  color: white;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #777;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+button[data-operation] {
+  background: #ff9500;
+}
+
+button[data-operation]:hover {
+  background: #ffaa33;
+}
+
+button[data-equals] {
+  background: #28a745;
+}
+
+button[data-equals]:hover {
+  background: #34ce57;
+}
+
+button[data-all-clear], button[data-delete] {
+  background: #dc3545;
+}
+
+button[data-all-clear]:hover, button[data-delete]:hover {
+  background: #e4606d;
+}
