@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khush's Creative Space</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.goat1000.com/tagcanvas.min.js"></script>
+</head>
+<body>
+  <div class="animated-bg"></div>
+
+  <nav class="mobile-nav">
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="portfolio-container">
+    <header id="home" class="creative-header">
+      <div class="header-content">
+        <h1 class="typing-text">Hi, I'm <span>Khush Rawat</span></h1>
+        <p class="tagline">Aspiring Web Developer & Code Enthusiast</p>
+        <div class="header-actions">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="about-section fade-in">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-frame">
+            <img src="images/myphoto.jpg" alt="Khush Rawat" class="profile-pic">
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I'm a Computer Science student passionate about web development and learning new technologies. I enjoy building intuitive, clean, and responsive interfaces.</p>
+          <div class="bio-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-calendar-alt"></i>
+              <div>
+                <span class="highlight-number">3+</span>
+                <span class="highlight-text">Years Experience</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-project-diagram"></i>
+              <div>
+                <span class="highlight-number">5+</span>
+                <span class="highlight-text">Projects Completed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section fade-in">
+      <div class="section-header">
+        <h2>My Skills</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="skills-container">
+        <canvas width="500" height="500" id="tagcanvas"></canvas>
+        <div id="taglist" style="display: none;">
+          <ul>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">Git</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section fade-in">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="project-gallery">
+        <div class="project-card" data-project="1">
+          <div class="project-preview" style="background-image: url('images/landing-page.png');">
+            <div class="project-overlay">
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </div>
+          <h3>Landing Page</h3>
+          <p>A modern and responsive landing page built with HTML, CSS, and JS.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+        <div class="project-card" data-project="2">
+          <div class="project-preview" style="background-image: url('images/calculator.png');">
+            <div class="project-overlay">
+              <a href="https://khushrawat-4.github.io/CodeSoft_Internship_Projects/codsoft_task1/index.html
+" class="project-link">View Project</a>
+            </div>
+          </div>
+          <h3>Simple Calculator</h3>
+          <p>A basic calculator app perrforming arithmetic operation with aclean UI.</p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Java</span>
+          </div>
+        </div>
+        <div class="project-card" data-project="3">
+          <div class="project-preview" style="background-image: url('images/portfolio.png');">
+            <div class="project-overlay">
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </div>
+          <h3>Personal Portfolio</h3>
+          <p>Your personal portfolio website showcasing you work and contact details.</p>
+          <div class="project-tech">
+            <spam>HTML</spam>
+            <span>CSS</span>
+            <span>Java</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section fade-in">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="contact-container">
+        <div class="contact-methods">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>khushctae@gmail.com</p>
+            <a href="mailto:khushctae@gmail.com" class="contact-link">Send Message</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Phone</h3>
+            <p>+91 9057281209</p>
+            <a href="tel:+919057281209" class="contact-link">Call Me</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <h3>Social</h3>
+            <div class="social-icons">
+              <a href="https://github.com/KhushRawat-4"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/khush-rawat-5874992a0/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/khushrawat_/#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="creative-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Khush Creative</h2>
+          <p>Building digital experiences that matter</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-cta">
+          <a href="resume.pdf" class="resume-link" download>
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Khush Creative. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
